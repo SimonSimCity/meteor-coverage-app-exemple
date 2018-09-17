@@ -9,7 +9,6 @@
     "coverage-app-unit": "spacejam --driver-package=practicalmeteor:mocha-console-runner test --coverage 'out_lcovonly out_coverage out_html'",
     "test-app-full": "spacejam --driver-package=practicalmeteor:mocha-console-runner test --full-app",
     "test-app-full-watch": "meteor --driver-package=practicalmeteor:mocha-console-runner test --full-app",
-    "test-app-full:dispatch": "meteor test --full-app --once --driver-package dispatch:mocha-phantomjs",
     "coverage-app-full": "spacejam --driver-package=practicalmeteor:mocha-console-runner test --full-app --coverage 'out_lcovonly out_coverage out_html in_coverage'",
     "test-packages": "spacejam --driver-package=practicalmeteor:mocha-console-runner test-packages --full-app",
     "test-packages-watch": "meteor --driver-package=practicalmeteor:mocha-console-runner test-packages",

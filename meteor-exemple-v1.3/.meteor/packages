@@ -60,7 +60,6 @@ simple:rest
 # testing
 factory
 xolvio:cleaner
-dispatch:mocha-phantomjs
 practicalmeteor:mocha
 hwillson:stub-collections
 johanbrook:publication-collector
