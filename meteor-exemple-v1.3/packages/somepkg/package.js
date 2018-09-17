@@ -22,8 +22,9 @@ Package.onTest(function (api) {
   api.use(['practicalmeteor:mocha@2.4.5_6', 'lmieulet:meteor-coverage@1.0.1']);
   api.use('somepkg');
   api.mainModule('somepkg-tests.js');
-});
 
-Npm.depends({
-  "chai-as-promised": "5.3.0"
+  Npm.depends({
+    chai: '2.1.0',
+    'chai-as-promised': '5.3.0',
+  });
 });

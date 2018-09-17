@@ -61,8 +61,6 @@ simple:rest
 factory
 xolvio:cleaner
 dispatch:mocha-phantomjs
-practicalmeteor:chai
-practicalmeteor:sinon
 practicalmeteor:mocha
 hwillson:stub-collections
 johanbrook:publication-collector

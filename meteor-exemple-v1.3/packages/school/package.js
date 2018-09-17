@@ -22,4 +22,9 @@ Package.onTest(function (api) {
   api.use(['practicalmeteor:mocha@2.4.5_6', 'lmieulet:meteor-coverage@1.0.1']);
   api.use('cgalvarez:school');
   api.mainModule('server/school.test.js', 'server');
+
+  Npm.depends({
+    chai: '3.0.0',
+    'sinon-chai': '2.8.0',
+  });
 });

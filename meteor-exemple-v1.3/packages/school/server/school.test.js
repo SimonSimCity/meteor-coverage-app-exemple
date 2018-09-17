@@ -1,5 +1,8 @@
-import {chai} from 'meteor/practicalmeteor:chai';
-var _should = chai.should();
+import chai from 'chai';
+import sinonChai from 'sinon-chai';
+
+chai.should();
+chai.use(sinonChai);
 
 describe('TypeScript school package', function () {
   it('creates empty Hogwarts', function () {

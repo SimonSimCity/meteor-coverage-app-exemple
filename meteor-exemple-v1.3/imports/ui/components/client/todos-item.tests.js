@@ -2,7 +2,7 @@
 /* eslint-disable func-names, prefer-arrow-callback */
 
 import { Factory } from 'meteor/factory';
-import { chai } from 'meteor/practicalmeteor:chai';
+import chai from 'chai';
 import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
 

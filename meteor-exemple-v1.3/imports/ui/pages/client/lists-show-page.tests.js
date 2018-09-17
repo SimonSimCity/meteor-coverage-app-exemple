@@ -4,13 +4,13 @@
 import { Meteor } from 'meteor/meteor';
 import { Factory } from 'meteor/factory';
 import { Random } from 'meteor/random';
-import { chai } from 'meteor/practicalmeteor:chai';
+import chai from 'chai';
 import StubCollections from 'meteor/hwillson:stub-collections';
 import { Template } from 'meteor/templating';
 import { _ } from 'meteor/underscore';
 import { $ } from 'meteor/jquery';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-import { sinon } from 'meteor/practicalmeteor:sinon';
+import sinon from 'sinon';
 
 
 import { withRenderedTemplate } from '../../test-helpers.js';

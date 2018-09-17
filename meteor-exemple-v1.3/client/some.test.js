@@ -1,4 +1,4 @@
-import { chai } from 'meteor/practicalmeteor:chai';
+import chai from 'chai';
 // Here is 1 client test
 describe('my module', function () {
   it('does something that should be tested', function () {

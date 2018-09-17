@@ -6,7 +6,7 @@ import { Lists } from './lists.js';
 import { insert, makePublic, makePrivate, updateName, remove } from './methods.js';
 import { Todos } from '../todos/todos.js';
 import { PublicationCollector } from 'meteor/johanbrook:publication-collector';
-import { chai, assert } from 'meteor/practicalmeteor:chai';
+import { assert } from 'chai';
 import { Random } from 'meteor/random';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
@@ -47,7 +47,7 @@ if (Meteor.isServer) {
         it('sends all public lists', function (done) {
           const collector = new PublicationCollector();
           collector.collect('lists.public', (collections) => {
-            chai.assert.equal(collections.Lists.length, 3);
+            assert.equal(collections.Lists.length, 3);
             done();
           });
         });
@@ -57,7 +57,7 @@ if (Meteor.isServer) {
         it('sends all owned lists', function (done) {
           const collector = new PublicationCollector({ userId });
           collector.collect('lists.private', (collections) => {
-            chai.assert.equal(collections.Lists.length, 2);
+            assert.equal(collections.Lists.length, 2);
             done();
           });
         });
